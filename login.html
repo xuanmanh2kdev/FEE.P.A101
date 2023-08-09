@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+      integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="container text-dark">
+      <div id="login-row" class="row justify-content-center">
+        <div
+          id="login-column"
+          class="col-sm-6 vh-100 d-flex align-items-center"
+        >
+          <div id="login-box" class="col-sm-12 border rounded mt-5 bg-white">
+            <form id="login-form" class="form" name="login-form">
+              <p
+                class="h3 text-left ml-02 mr-02 bg-light pl-3 pt-2 pb-2 mb-3 border border-bottom"
+              >
+                Please Sign In
+              </p>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="E-mail"
+                  size="50"
+                />
+                <span class="form-message text-left"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Password"
+                  size="50"
+                />
+                <span class="form-message text-left"></span>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  id="remember-me"
+                  type="checkbox"
+                  class="form-check-input"
+                  size="1"
+                />
+                <label class="form-check-label" for="remember-me"
+                  >Remember Me</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 pt-2 pb-2 bg-success mb-2 border border-success"
+              >
+                Login
+              </button>
+              <div id="register-link" class="text-left pb-2">
+                <a href="./register.html">Click here to Register</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./loginApp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
